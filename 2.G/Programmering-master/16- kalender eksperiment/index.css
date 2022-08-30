@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Glory';
+}
+
+body{
+    background: rgb(214, 0, 28);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.door{
+    background-color: rgba(0, 135, 62) ;
+    background-size:cover ;
+}

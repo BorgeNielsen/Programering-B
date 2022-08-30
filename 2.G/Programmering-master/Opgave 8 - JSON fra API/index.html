@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>What to do</h1>
+    </header>
+    <main>
+        <div id="activity">
+            <h2 id="title">Activity</h2>
+            <p id="pants">2</p>
+            <p id="acc">0.5</p>
+            <p id="price">69</p>
+            <p id="cat">cumcreational</p>
+        </div>
+        
+        <label for="select-type">
+            Select a type
+            <select name="select-type" id="select-type">
+                <option value="">Random</option>
+                <option value="?type=busywork">Busywork</option>
+                <option value="?type=social">Social</option>
+                <option value="?type=recreational">Recreational</option>
+                <option value="?type=education">Education</option>
+                <option value="?type=relaxation">Relaxation</option>
+                <option value="?type=music">Music</option>
+                <option value="?type=charity">Charity</option>
+                <option value="?type=cooking">Cooking</option>
+                <option value="?type=diy">DIY</option>
+            </select>
+        </label>
+
+        <label for="select-pants">
+            Select a participants
+            <select name="select-pants" id="select-pants">
+                <option value="">Random</option>
+                <option value="&participants=1">1 Person</option>
+                <option value="&participants=2">2 People</option>
+                <option value="&participants=3">3 People</option>
+                <option value="&participants=4">4 People</option>
+                <option value="&participants=5">5 People</option>
+            </select>
+        </label>
+
+    </main>
+    <footer>
+        <button id="fetch">
+            What else
+        </button>
+
+  
+    
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

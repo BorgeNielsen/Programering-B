@@ -1,0 +1,37 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    height: 20vh;
+    background-color: bisque;
+}
+
+main{    
+    height: 60vh;
+    background-color: salmon;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+footer{
+    height: 20vh;
+    background-color: seashell;
+}
+
+.door{
+    background-color: red;
+    place-content: center;
+    border: black 1px solid;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.door:hover{
+    cursor: pointer;
+}

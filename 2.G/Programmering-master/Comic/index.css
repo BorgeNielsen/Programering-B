@@ -1,0 +1,44 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    font-family:'Poppins';
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+header{
+    background-color: honeydew;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    place-items: center;    
+    padding: .5rem;
+}
+
+main{
+    background-color: lavender;
+    display: grid;
+    height: 84vh;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+.varmt{
+    display: grid;
+    grid-auto-flow:rows;
+    place-items: center;
+}
+
+.koldt:hover{
+    opacity: 0;
+    transition: 6s ease-out;
+}
+
+.ild:hover{
+    opacity: 0;
+    transition: 2.5s ease-out;
+}

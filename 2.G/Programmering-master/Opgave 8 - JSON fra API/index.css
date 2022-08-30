@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+*{
+    font-family:'Zen Antique Soft' ;
+}
+
+body{
+    background: darkolivegreen;
+}
+header{
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    color: white;
+    text-shadow: 3px 5px 12px white     ;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    place-items: center;   
+    
+    height: 80vh;
+}
+
+#activity{
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid white;
+    background: yellowgreen;
+    border-radius: 1rem;
+    box-shadow: 0 0 12px 6px rebeccapurple;
+}
+
+footer{
+    height: 8vh;
+    display: grid;
+    place-items: center;
+}
+
+button{
+    color: white;
+}

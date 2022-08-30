@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    font-family:'Open Sans';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    position: relative;
+    height: 90vh;
+}
+
+
+canvas{
+   position: absolute;
+   bottom: 0;
+}
+
+header{
+    height: 10vh;
+    background: black;
+    display: grid;
+    place-items: center;
+    color: wheat;
+}
+
+h2{
+    text-align: center;
+    padding-top:1rem;
+}

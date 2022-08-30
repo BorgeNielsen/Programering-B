@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+*{
+    font-family:'Zen Antique Soft' ;
+}
+
+body{
+    background: rgb(214,0,28);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+.door{
+    background: rgb(0, 135, 62);
+    background-size: cover;
+}

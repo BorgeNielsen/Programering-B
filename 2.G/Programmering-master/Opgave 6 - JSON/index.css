@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kurenaido';
+    font-size: 1.2rem;
+}
+body{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:.5rem;
+    padding:1rem;
+}
+
+div{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    padding:1rem;    
+    border-radius:1rem;
+   
+}

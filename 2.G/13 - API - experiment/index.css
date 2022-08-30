@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+*{
+    font-family:'Zen Antique Soft' ;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap:1rem;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+}
