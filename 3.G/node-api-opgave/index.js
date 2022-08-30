@@ -10,6 +10,9 @@ const helmut = {
 
 console.log('kurt')
 
+
+
+
 app.get('/*', (req,res)=>{
     console.log('Der er nogle der kommer og siger hej')
     if(req.params[0]){
@@ -21,8 +24,6 @@ app.get('/*', (req,res)=>{
         }
 
         res.send(req.params[0])
-    }else{
-        res.send('Du besøgte mig da i min rod ;)')
     }
 })
 
