@@ -25,6 +25,7 @@ serverSocket.on('connection', socket => {
   socket.emit('history', chatHistory.join('<br>'))
   //Lyt til chatbeskeder 
   socket.on('chatMessage', chatMessage => {
-    //din kode her - se flowchart
+    console.log(chatMessage)
+    serverSocket.broadcast.emit('chatMessage',chatMessage)
   })
 })

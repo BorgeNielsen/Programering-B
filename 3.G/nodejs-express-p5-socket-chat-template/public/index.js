@@ -2,6 +2,8 @@
 let clientSocket
 let chatHistory 
 let myName
+let msg
+
 function setup(){
     //spørg serveren om en socket forbindelse
     clientSocket = io.connect()
@@ -17,7 +19,20 @@ function setup(){
         if(select('#nameInput')!=''){
             //gem brugernavnet i din variabel
             myName = select('#nameInput').value()
+            select('#namePage').addClass('hidden')
+            select('#chatPage').removeClass('hidden')
             //din kode her - se flowchart
         }
+    })
+    select('#sendButton').mousePressed(()=>{
+        let msg = select('#chatMessage').value()
+        let sendMsg = {
+            "name": myName,
+            "message": msg
+        }
+        clientSocket.emit('chatMessage', sendMsg )
+    })
+    clientSocket.on('chatMessage', chatMessage => {
+        console.log(chatMessage)
     })
 }
