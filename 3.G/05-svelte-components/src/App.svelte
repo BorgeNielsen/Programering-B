@@ -1,30 +1,28 @@
 <script>
-	let name = 'world';
+	import Recipe from "./components/Recipe.svelte"
+	let recipes = ['Citron måne', 'Remonce', 'Mellem ost', 'Kurts gamle sko', 'Dr. Oetkers pizzaburger']
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<header>
+	<h1>Web components</h1>
+</header>
+
+<main>	
+	{#each recipes as title, index}
+		<Recipe {title} {index}/>
+	
+	{/each}
+</main>	
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
+	h1{
+		color: hotpink;
 		text-transform: uppercase;
-		font-size: 4em;
 		font-weight: 100;
 	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	main{
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		gap: .4rem;
 	}
 </style>
